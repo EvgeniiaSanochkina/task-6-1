@@ -11,7 +11,7 @@ public class SQRServiceTest {
             "500,700,4",
             "2500,2700,1"
     })
-    void shouldCalculateForRangeFrom1000To1300(int x, int y, int expected) {
+    void shouldCalculateForRange(int x, int y, int expected) {
         SQRService service = new SQRService();
         long actual = service.calcSqrt(x, y);
         Assertions.assertEquals(expected, actual);
